@@ -1,10 +1,14 @@
 import {
-  P1 
-} from '../Renderer/Pages'
+  Nothing,
+  Home
+} from '../Renderer/Pages/PagesArr'
 export const RootRoutes = [
   {
-    name: 'p1',
-    path: '/p1',
-    component: P1
+    path: '/warring',
+    component: Nothing
+  },
+  {
+    path: '/plane',
+    component: Home
   }
 ]

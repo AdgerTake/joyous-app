@@ -1,11 +1,11 @@
 import React from 'react'
 
-const P1 = () => {
+const Nothing = () => {
   return (
     <div>
-      
+      404
     </div>
   )
 }
 
-export default P1
+export default Nothing

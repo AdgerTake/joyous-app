@@ -6,9 +6,9 @@
 //   loader: () => import('./P1'),
 //   loading: false,
 // })
-import P1 from './P1'
-// const P1 = () => import('./P1')
-console.log(P1)
+import Nothing from './Nothing'
+import Home from './Home'
 export {
-  P1
+  Nothing,
+  Home
 }

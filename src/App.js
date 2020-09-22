@@ -1,10 +1,11 @@
 import React from 'react'
-import { Route, Switch, Link } from 'react-router-dom'
+import { HashRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
 import { RootRoutes } from './Router'
+import './App.scss'
 function App() {
   return (
     <>
-    <Link to='/p1'>P!</Link>
+      <Router>
       <Switch>
         {
           RootRoutes.map(item => {
@@ -18,7 +19,10 @@ function App() {
             </Route>
           })
         }
+        <Redirect to='/plane' from='/' exact/>
+        <Redirect to='/warring'/>
       </Switch>
+    </Router>
     </>
   )
 }
